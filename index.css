@@ -393,9 +393,20 @@ section .title::after{
     text-decoration: none;
 }
 
-
+/* git calender */
+.github-images img{
+    border: 0px solid black;
+    margin: auto;
+    display: block;
+    justify-items: center;
+}
 
 /* contact section styling */
+
+#contact{
+    background-color: #111;
+    color: white;
+}
 .contact .title::after{
     content: "get in touch";
     background-color: #222;
@@ -493,9 +504,9 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background: #111;
+    background: white;
     padding: 15px 23px;
-    color: #fff;
+    color: #111;
     text-align: center;
 }
 footer span a{
