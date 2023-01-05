@@ -275,7 +275,7 @@ section .title::after{
 .skills .title::after{
     content: "what i know";
 }
-.skills-images img {
+.skills-card img {
     height: 150px;
     width: 150px;
     border-radius: 5%;
