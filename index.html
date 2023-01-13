@@ -28,7 +28,7 @@
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
                 <li >
-                    <button style="background-color: #9d0552; border: none;" id="resume-button-1"><a id="resume-link-1" class="nav-link resume" href="./pdf/Ekta-Dhawal-Resume.pdf" class="menu-btn" download>Resume</a></button></li>
+                    <button style="background-color: #9d0552; border: none;" id="resume-button-1"><a id="resume-link-1" href="./pdf/Ekta-Dhawal-Resume.pdf" target="_blank" download>Resume</a></button></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -64,7 +64,7 @@
                         Express, Node.js, HTML, and CSS. Learning and technology enthusiast.
                         Currently seeking opportunities to build reliable, optimised and scalable
                         systems.</p>
-                        <button style="background-color: #9d0552; border: none; padding: 5px; height: 10px;" id="resume-button-2"><a id="resume-link-2"   href="./pdf/Ekta-Dhawal-Resume.pdf" download>Resume</a></button>
+                        <button style="background-color: #9d0552; border: none; padding: 5px; height: 10px;" id="resume-button-2"><a id="resume-link-2"   href="./pdf/Ekta-Dhawal-Resume.pdf" target="_blank" download>Resume</a></button>
                 </div>
             </div>
         </div>
@@ -219,11 +219,10 @@
 
             <link class="react-activity-calendar" rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 
-            <div style="width:70%;margin:auto;" class="calendar react-activity-calendar">
+            <div style="width:70%;margin:auto;" class="calendar">
                 
             </div>
             <br>
-
             <div class="github-images"   >
                 <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=dekta&theme=default" alt=""/>
               </div>
@@ -238,6 +237,12 @@
             <script>
                 GitHubCalendar(".calendar", "dekta");
                 GitHubCalendar(".calendar", "dekta", { responsive: true });
+
+                GitHubCalendar(".calendar", "dekta", {
+                proxy (username) {
+                    return fetch(`https://your-proxy.com/github?user=${username}`)
+                }
+                }).then(r => r.text())
             </script>
         </div>
         
