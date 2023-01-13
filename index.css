@@ -126,6 +126,13 @@ section .title::after{
 #nav-menu .menu li a:hover{
     color: #9d0552;
 }
+#nav-menu .menu li #resume-button-1{
+    background-color: #111;
+}
+#nav-menu.sticky .menu li #resume-button-1{
+    background-color: #9d0552;
+    border: none;
+}
 #nav-menu.sticky .menu li a:hover{
     color: #fff;
 }
