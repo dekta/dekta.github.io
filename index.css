@@ -71,9 +71,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #9d0552;
+    color: #9d0552 !important;
     padding: 0 5px;
-    background: rgb(21, 5, 5);
+    background: rgb(21, 5, 5) !important; 
     transform: translateX(-50%);
 }
 
@@ -82,7 +82,7 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 40px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -194,6 +194,7 @@ section .title::after{
 .home .home-content .text-1{
     font-size: 27px;
     color: #9d0552;
+    margin-top: 40px;
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -226,7 +227,20 @@ section .title::after{
     color: #9d0552;
     background: none;
 }
-
+#home_img {
+    border: 0px solid #9d0552;
+    margin-top: 40px;
+    margin-left: 160px;
+    width: 30%;
+}
+#home_img img{
+    width: 100%;
+    margin-left: 30px;
+}
+.home-1{
+    display: flex;
+    justify-content: space-between;
+}
 /* about section styling */
 .about{
     background-color: #111;
@@ -311,7 +325,7 @@ section .title::after{
     height: 50px;
     margin-top: 10px;
     width: 100%;
-    color: #111;
+    color: white;
     background:#9d0552;
 }
 
@@ -321,6 +335,7 @@ section .title::after{
     background-color: #111;
     color: white;
 }
+
 .projects .title::after{
     content: "See My Work";
 }
@@ -333,7 +348,7 @@ section .title::after{
     transition: all 0.3s ease;
     color: #9d0552;
     height: 580px;
-    
+    border: 0px solid green;
 }
 .projects .carousel .project-card:hover {
     background: #9d0552;
@@ -368,35 +383,21 @@ section .title::after{
 }
 .projects .carousel .project-card img{
     height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #9d0552;
-    transition: all 0.3s ease;
+    width: 100%;
 }
 .projects .carousel .project-card:hover img{
     border-color: #fff;
 }
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
+.content{
+    border: 0px solid red;
+    margin-bottom: 20px;
+    height: 300px;
 }
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #9d0552!important;
-    transition: all 0.3s ease;
+.p_img{
+    border: 0px solid blue;
 }
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: #9d0552!important;
+.p_img img{
+    width: 50%;
 }
 
 .repo-links{
@@ -404,6 +405,9 @@ section .title::after{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin-bottom: 20px;
+    border: 0px solid red;
+    
 }
 
 .project-github-link,.project-deployed-link {
@@ -415,12 +419,20 @@ section .title::after{
     text-decoration: none;
 }
 
+
+
+
+
+  
 /* git calender */
 .github-images img{
     border: 0px solid black;
     margin: auto;
     display: block;
     justify-items: center;
+}
+.github-calendar{
+    border: 0px solid red;
 }
 
 /* contact section styling */
@@ -541,19 +553,23 @@ footer span a:hover{
 
 
 /* responsive media query start */
-@media (max-width: 1104px) {
+@media (max-width:  1014px) {
+    #nav-menu{
+        width:100%;
+        margin:auto
+    }
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1014px) {
     .max-width{
         padding: 0 50px;
     }
 }
-@media (max-width: 947px){
+@media (max-width: 1014px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -622,17 +638,33 @@ footer span a:hover{
 
 }
 
-@media (max-width: 690px) {
+@media (max-width: 770px) {
+    body{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #nav-menu{
+        width: 100%;
+    }
     .max-width{
-        padding: 0 23px;
+        width: 100%;
+        
     }
     .home .home-content .text-2{
-        font-size: 60px;
+        border: 0px solid red;
+        font-size: 40px;
     }
     .home .home-content .text-3{
         font-size: 32px;
     }
     .home .home-content a{
+        font-size: 20px;
+    }
+    #about{
+        border: 1px solid red;
+    }
+    .about .about-content{
         font-size: 20px;
     }
     .services .serv-content .project-card{
@@ -641,9 +673,20 @@ footer span a:hover{
     #skill_row_1, #skill_row_2, #skill_row_3{
         width: 100%;
     }
+    .github-images img{
+        width: 100%;
+    }
+    .content{
+        font-size: 20px;
+    }
+    
+   
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+    #home_img{
+        display: none;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -654,12 +697,18 @@ footer span a:hover{
     .skills .skills-content .left .text{
         font-size: 19px;
     }
-    .contact .right form .fields{
-        flex-direction: column;
+    .carousel .project-card .content .project-description{
+       font-size: small;
     }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
+    .projects .title::after{
+        display: none;
+    }
+    .contact-content .left .text{
+        text-align: center;
+        font-size: small;
+    }
+    .contact-content .right{
+        display: none;
     }
     .right form .error-box{
        width: 150px;
@@ -672,4 +721,8 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .github-images img{
+        width: 100%;
+    }
 }
+
