@@ -114,8 +114,12 @@ section .title::after{
 #nav-menu .menu li{
     list-style: none;
     display: inline-block;
+    
 }
+
+
 #nav-menu .menu li a{
+   
     display: block;
     color:white;
     font-size: 18px;
@@ -574,6 +578,7 @@ footer span a:hover{
         display: block;
         z-index: 999;
     }
+    
     .menu-btn i.active:before{
         content: "\f00d";
     }
@@ -588,8 +593,10 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
+    
     #nav-menu .menu.active{
         left: 0;
+        
     }
     #nav-menu .menu li{
         display: block;
@@ -644,6 +651,8 @@ footer span a:hover{
         padding: 0px;
         margin: 0px;
     }
+    
+
     #nav-menu{
         width: 100%;
     }
