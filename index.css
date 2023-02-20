@@ -357,7 +357,7 @@ section .title::after{
 .projects .carousel .project-card:hover {
     background: #9d0552;
     text-decoration: none;
-    color: #222;
+    color: white;
 }
 
 .projects .carousel .project-card:hover .project-github-link a{
@@ -423,6 +423,9 @@ section .title::after{
     text-decoration: none;
 }
 
+.fa-github:hover{
+    color: white;
+}
 
 
 
