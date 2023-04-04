@@ -127,6 +127,12 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+
+#nav-menu .menu li button {
+   border: none;
+}
+
+
 #nav-menu .menu li a:hover{
     color: #9d0552;
 }
