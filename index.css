@@ -413,7 +413,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .projects .project .project-card img{
-    height: 150px;
+    
     width: 100%;
 }
 .projects .project .project-card:hover img{
@@ -422,7 +422,7 @@ section .title::after{
 .content{
     border: 0px solid red;
     margin-bottom: 20px;
-    height: 300px;
+   
 }
 .p_img{
     border: 0px solid blue;
@@ -757,9 +757,10 @@ footer span a:hover{
     .carousel .project-card .content .project-description{
        font-size: small;
     }
-    /* .project-card{
-        height: fit-content;
-    } */
+    .project-card{
+        height: 600px;
+        
+    }
     .projects .title::after{
         display: none;
     }
