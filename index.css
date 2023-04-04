@@ -587,7 +587,7 @@ footer span a:hover{
 
 
 /* responsive media query start */
-/* @media (max-width:  1014px) {
+@media (max-width:  1014px) {
     #nav-menu{
         width:100%;
         margin:auto
@@ -602,8 +602,8 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
-} */
-/* @media (max-width: 1014px){
+}
+@media (max-width: 1014px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -673,9 +673,9 @@ footer span a:hover{
         width: 30%;
     }
 
-} */
+}
 
- /* @media (max-width: 770px) {
+@media (max-width: 770px) {
     body{
         width: 100%;
         padding: 0px;
@@ -721,11 +721,11 @@ footer span a:hover{
         padding-top:40px;
         padding-bottom: 40px;
         transition:transform .5s ease-in-out; 
-    } 
-    .project-card{
+    }
+    /* /* .project-card{
         height: fit-content;
-    } 
-    
+    } */
+     */
     .project-card .content{
         font-size: medium;
     }
@@ -738,9 +738,9 @@ footer span a:hover{
     }
     
    
-} */
+}
 
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
     #home_img{
         display: none;
     }
@@ -785,5 +785,5 @@ footer span a:hover{
     .github-images img{
         width: 100%;
     }
-} */
+}
 
