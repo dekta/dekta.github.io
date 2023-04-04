@@ -345,12 +345,18 @@ section .title::after{
     background-color: #111;
     color: white;
 }
-
-.projects .title::after{
-    content: "See My Work";
+.project{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+    margin: auto;
+    padding-top:40px;
+    padding-bottom: 40px;
+    transition:transform .5s ease-in-out; 
 }
-.projects .carousel .project-card{
-    background: #222;
+
+/* .project .project-card .carousel div{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -359,43 +365,58 @@ section .title::after{
     color: #9d0552;
     height: 580px;
     border: 0px solid green;
+} */
+
+.projects .title::after{
+    content: "See My Work";
 }
-.projects .carousel .project-card:hover {
+.projects .project .project-card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #9d0552;
+    height: fit-content;
+    border: 0px solid green;
+}
+.projects .project .project-card:hover {
     background: #9d0552;
     text-decoration: none;
     color: white;
 }
 
-.projects .carousel .project-card:hover .project-github-link a{
+.projects .project .project-card:hover .project-github-link a{
     text-decoration: none;
     color: #222;
 }
-.projects .carousel .project-card:hover .project-deployed-link a{
+.projects .project .project-card:hover .project-deployed-link a{
     text-decoration: none;
     color: #222;
 }
 
 
-.projects .carousel .project-card .box{
+.projects .project .project-card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.projects .carousel .project-card:hover .box{
+.projects .project .project-card:hover .box{
     transform: scale(1.05);
 }
-.projects .carousel .project-card .text{
+.projects .project .project-card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.projects .carousel .project-card img{
+.projects .project .project-card img{
     height: 150px;
     width: 100%;
 }
-.projects .carousel .project-card:hover img{
+.projects .project .project-card:hover img{
     border-color: #fff;
 }
 .content{
@@ -691,6 +712,24 @@ footer span a:hover{
     #skill_row_1, #skill_row_2, #skill_row_3{
         width: 100%;
     }
+    .project{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:40px;
+        margin: auto;
+        padding-top:40px;
+        padding-bottom: 40px;
+        transition:transform .5s ease-in-out; 
+    }
+    /* .project-card{
+        height: fit-content;
+    } */
+    
+    .project-card .content{
+        font-size: medium;
+    }
+
     .github-images img{
         width: 100%;
     }
@@ -718,6 +757,9 @@ footer span a:hover{
     .carousel .project-card .content .project-description{
        font-size: small;
     }
+    /* .project-card{
+        height: fit-content;
+    } */
     .projects .title::after{
         display: none;
     }

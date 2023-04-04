@@ -73,12 +73,20 @@ $(document).ready(function(){
 });
 
 
-let resume1 = document.querySelector(".nav-link resume")
-resume1.onclick =()=>{
-    window.open("https://drive.google.com/file/d/1xN90OjvzT8xab5C8JI48741g4kkez7BY/view?usp=share_link")
-}
 
-// let resume2 = document.getElementById("resume-link-2")
-// resume2.onclick = () =>{
-//     window.open("https://drive.google.com/file/d/1xN90OjvzT8xab5C8JI48741g4kkez7BY/view?usp=share_link")
-// }
+let resume1 = document
+  .getElementById("resume-link-1")
+  .addEventListener("click",opendrive);
+
+  let resume2 = document
+  .getElementById("resume-link-2")
+  .addEventListener("click",opendrive);
+
+
+function opendrive(){
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/1xN90OjvzT8xab5C8JI48741g4kkez7BY/view?usp=sharing")
+  );
+ }
+
