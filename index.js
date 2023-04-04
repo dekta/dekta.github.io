@@ -76,17 +76,24 @@ $(document).ready(function(){
 
 let resume1 = document
   .getElementById("resume-link-1")
-  .addEventListener("click",opendrive);
+  .addEventListener("click",opendrive1);
 
   let resume2 = document
   .getElementById("resume-link-2")
-  .addEventListener("click",opendrive);
+  .addEventListener("click",opendrive2);
 
 
-function opendrive(){
+function opendrive1(){
   window.open(
     (href =
       "https://drive.google.com/file/d/1xN90OjvzT8xab5C8JI48741g4kkez7BY/view?usp=sharing")
   );
  }
+
+ function opendrive2(){
+    window.open(
+      (href =
+        "https://drive.google.com/file/d/1xN90OjvzT8xab5C8JI48741g4kkez7BY/view?usp=sharing")
+    );
+   }
 
