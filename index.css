@@ -407,7 +407,7 @@ section .title::after{
 #projects .project .project-card:hover .box{
     transform: scale(1.05);
 }
-#projects .project .project-card .text{
+#projects .project .project-card .project-title{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
