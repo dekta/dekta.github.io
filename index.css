@@ -367,6 +367,14 @@ section .title::after{
     border: 0px solid green;
 } */
 
+#projects .project .project-card .img-card {
+     height: 150px;
+    max-height: 100%;
+    overflow-y: auto !important;
+    
+}
+
+
 #projects .title::after{
     content: "See My Work";
 }

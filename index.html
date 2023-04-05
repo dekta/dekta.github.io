@@ -26,12 +26,11 @@
         <div class="max-width" >
             <div class="logo"><a href="#">Ekta<span>Dhawal</span></a></div>
             <ul class="menu">
-                <li><a class="menu-btn" href="#home" >Home</a></li>
-                <li><a class="menu-btn" href="#about" >About</a></li>
-                <li><a class="menu-btn" href="#skills" >Skills</a></li>
-                <li><a class="menu-btn" href="#projects" >Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li >
+                    <li><a class="nav-link home" href="#home">Home</a></li>
+                    <li><a class="nav-link about" href="#about">About</a></li>
+                    <li><a class="nav-link skills" href="#skills">Skills</a></li>
+                    <li><a class="nav-link projects" href="#projects">Projects</a></li>
+                    <li><a class="nav-link contact" href="#contact">Contact</a></li>
                     <button  id="resume-button-1" ><a class="nav-link resume" id="resume-link-1" href="./pdf/Ekta-Dhawal-Resume.pdf"  target="_blank" download = "">Resume</a></button></li>
             </ul>
             <div class="menu-btn">
@@ -41,13 +40,13 @@
     </nav>
 
     <!-- home section start -->
-    <section class="nav-link home" id="home">
+    <section  id="home">
         <div class="max-width home-1">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2" id="user-detail-name">EKTA DHAWAL</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <button style="background-color: #111; border: none; padding: 5px; height: 10px; " id="resume-button-2"><a id="resume-link-2"  class="nav-link resume"  href="./pdf/Ekta-Dhawal-Resume.pdf" target="_blank" download="">Resume</a></button> 
+                
             </div>
             <div id="home_img" data-aos="flip-left">
                 <img src="./images/home.png" alt="">
@@ -57,7 +56,7 @@
     </section>
 
     <!-- about section start -->
-    <section  id="about"  class="nav-link about section">
+    <section  id="about" class="about section" >
         <div class="max-width">
             <h3 class="title">About me</h3>
             <div class="about-content">
@@ -70,7 +69,8 @@
                         forte in Backend Development, having knowledge of Javascript, MongoDB,
                         Express, Node.js, HTML, and CSS. Learning and technology enthusiast.
                         Currently seeking opportunities to build reliable, optimised and scalable
-                        systems.</p>       
+                        systems.</p> 
+                        <button style="background-color: #111; border: none; padding: 5px; height: 10px; " id="resume-button-2"><a id="resume-link-2"  class="nav-link resume"  href="./pdf/Ekta-Dhawal-Resume.pdf" target="_blank" download="">Resume</a></button>       
                 </div>
             </div>
             
@@ -78,7 +78,7 @@
     </section>
 
     <!-- skills section start -->
-    <section   id="skills" class="nav-link skills" >
+    <section   id="skills"  >
         <div class="max-width">
             <h3 class="title">My skills</h3>
             <div class="skills-content">
@@ -136,16 +136,13 @@
     </section>
 
     <!-- projects section start -->
-    <!-- <section id="projects" class="nav-link projects">
+    <section id="projects" >
         <div class="max-width">
             <h3 class="title">My projects</h3>
             <div  class="project" >
                 <div class="project-card">
                     <div class=" img-card ">
-                        <div>
-                            <img src="./images/carb_ss1.png" >
-                        </div>
-                        
+                            <img src="./images/cm.png.png" >     
                     </div>
                     <div class="content">
                             <h3 class="project-title">CarbManager Clone</h3>
@@ -165,9 +162,9 @@
                 </div>
 
                     <div class="project-card">
-                        <div class="p_img">
-                            <img src="./images/stream_p.png" style="width: 100%;">
-                        </div>
+                        <div class=" img-card ">
+                            <img src="./images/stream_p.png" >     
+                    </div>
                         <div class="content">
                             <h3 class="text project-title">Streaming Dome <br>(Zee5 Clone)</h3>
                             <p class="project-description">This website is about streaming videos <br>
@@ -182,16 +179,16 @@
                                 <span>  <a href="https://github.com/dekta/straight-turkey-1580" target="_blank"> <i class="fab fa-github"></i> </a></span>
                             </div>
                             <div class="project-deployed-link">
-                                <span> <a href="https://tiny-jalebi-71eb17.netlify.app/" target="_blank">  <i class="fa fa-eye"></i>  </a></span>
+                                <span> <a href="https://streaming-dome.vercel.app/" target="_blank">  <i class="fa fa-eye"></i>  </a></span>
                             </div>
                         </div>
                             
                         </div>
                     
                     <div class="project-card">
-                        <div class="p_img">
-                            <img src="./images/travel_p.png" style="width: 100%;">
-                        </div>
+                        <div class=" img-card ">
+                            <img src="./images/hp.png.png" >     
+                    </div>
                         <div class="content">
                             <h3 class="project-title">Travel Pro <br>(Clone:Orbitz website)</h3>
                             <p class="project-description">It is a travel booking platform. Here you can book a flight ticket and hotel <br>It was a collaborative project of five members which
@@ -211,9 +208,9 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="p_img">
-                            <img src="./images/scheduler.png" >
-                        </div>
+                        <div class=" img-card ">
+                            <img src="./images/sch.png.png" >     
+                         </div>
                         <div class="content">
                                 <h3 class="project-title">Scheduler(Tutoring booking System)</h3>
                                     <p class="project-description">It is Tutoring Booking system<br>From this website a student can book a teacher for taking tutition</p>
@@ -230,60 +227,9 @@
                          </div>  
                     </div>
             </div>
-    </section> -->
-
-    <section id="projects">
-        <h1>Projects</h1>
-        <span></span>
-     <div class="project">
-        <!-- 1 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/Tripoto.png" alt=""></div>
-            <h2 class="project-title">Tripoto</h2>
-            <p class="project-description">A social travel platform that share and discover travel experiences, stories, community, tourism guides, hotels, holidays, getaways, attractions etc...</p>
-            <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
-         <div class="repo-links">
-            <div class="project-github-link"><a href="https://github.com/ShuShu-8788/quick-snake-3428" target="_blank">Github</a></div>
-            <div class="project-deployed-link"><a href="https://tripotoclone.netlify.app/" target="_blank">Demo</a></div>
-        </div> 
-       </div>         
-        <!-- 2 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/Fiverr.png" alt=""></div>
-            <h2 class="project-title">Fiverr</h2>
-            <p class="project-description">A global online marketplace for freelance services, which connects freelancers to people or businesses looking to hire.</p>
-            <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
-         <div class="repo-links">
-            <div class="project-github-link"><a  href="https://github.com/chandan1506/domineering-kick-7131" target="_blank">Github</a></div>
-            <div class="project-deployed-link"><a  href="https://vermillion-kheer-8cd042.netlify.app" target="_blank">Demo</a></div>
-         </div>
-       </div>
-        <!-- 3 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/CaratLane.png" alt=""></div>
-            <h2 class="project-title">CaratLane</h2>
-            <p class="project-description">An India's largest online Jewellery website,which provides varieties of exquisite jewellery designs such as rings,earrings,etc..</p>
-            <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript, Nodejs, Express,  MongoDB</p>
-            <div class="repo-links">
-                <div class="project-github-link"><a  href="https://github.com/chandan1506/mellow-income-5415" target="_blank">Github</a></div>
-                <div class="project-deployed-link"><a  href="https://graceful-trifle-0e69fe.netlify.app/" target="_blank">Demo</a></div>
-            </div>
-        </div>
-           
-        <!-- 4 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/stack.png" alt=""></div>
-            <h2 class="project-title">Stack overflow</h2>
-            <p class="project-description">A platform which unites enthusiastic programmers for their questions and answers. </p>
-            <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript , Nodejs , Express , MongoDB</p>
-          <div class="repo-links">
-              <div class="project-github-link"><a href="https://github.com/RAJKUMARSHRIVASH/native-minister-9066" target="_blank">Github</a></div>
-              <div class="project-deployed-link"><a href="https://rococo-rolypoly-a926ac.netlify.app/" target="_blank">Demo</a></div>
-           </div>
-        </div>
-      </div>
     </section>
 
+   
 
     <!-- github calander start -->
     <section  class="github-calendar react-activity-calendar" id="services">
@@ -319,7 +265,7 @@
     </section>
 
     <!-- contact section start -->
-    <section class="nav-link contact" id="contact">
+    <section  id="contact">
         <div class="max-width">
             <h3 class="title">Contact me</h3>
             <div class="contact-content">
