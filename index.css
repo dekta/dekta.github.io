@@ -35,12 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .projects, .contact, footer{
+#about, .services, #skills, #projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
+#about .about-content,
 .services .serv-content,
-.skills .skills-content,
+#skills .skills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +184,7 @@ section .title::after{
 
 
 /* home section styling */
-.home{
+#home{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
@@ -194,34 +194,34 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
+#home .max-width{
   width: 100%;
   display: flex;
 }
-.home .max-width .row{
+#home .max-width .row{
   margin-right: 0;
 }
-.home .home-content .text-1{
+#home .home-content .text-1{
     font-size: 27px;
     color: #9d0552;
     margin-top: 40px;
 }
-.home .home-content .text-2{
+#home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
     color: #9d0552;
 }
-.home .home-content .text-3{
+#home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
     color: #9d0552;
 }
-.home .home-content .text-3 span{
+#home .home-content .text-3 span{
     color: #9d0552;
     font-weight: 500;
 }
-.home .home-content a{
+#home .home-content a{
     display: inline-block;
     background: #9d0552;
     color: #fff;
@@ -233,7 +233,7 @@ section .title::after{
     border: 2px solid #9d0552;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+#home .home-content a:hover{
     color: #9d0552;
     background: none;
 }
@@ -247,43 +247,43 @@ section .title::after{
     width: 100%;
     margin-left: 30px;
 }
-.home-1{
+#home-1{
     display: flex;
     justify-content: space-between;
 }
 /* about section styling */
-.about{
+#about{
     background-color: #111;
     color: white;
 }
 
-.about .title::after{
+#about .title::after{
     content: "who i am";
 }
-.about .about-content .left{
+#about .about-content .left{
     width: 45%;
 }
-.about .about-content .left img{
+#about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
-.about .about-content .right{
+#about .about-content .right{
     width: 55%;
 }
-.about .about-content .right .text{
+#about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+#about .about-content .right .text span{
     color: #9d0552;
 }
-.about .about-content .right p{
+#about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+#about .about-content .right a{
     display: inline-block;
     background: #9d0552;
     color: #fff;
@@ -295,7 +295,7 @@ section .title::after{
     border: 2px solid #9d0552;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+#about .about-content .right a:hover{
     color: #9d0552;
     background: none;
 }
@@ -303,7 +303,7 @@ section .title::after{
 
 /* skills section styling */
 
-.skills .title::after{
+#skills .title::after{
     content: "What I Know";
     background: white;
 }
@@ -316,7 +316,7 @@ section .title::after{
     margin-left: 20px;
 }
 
-.skills .skills-content {
+#skills .skills-content {
     display: flex;
     width: 100%;
 }
@@ -341,7 +341,7 @@ section .title::after{
 
 
 /* projects section styling */
-.projects{
+#projects{
     background-color: #111;
     color: white;
 }
@@ -367,10 +367,10 @@ section .title::after{
     border: 0px solid green;
 } */
 
-.projects .title::after{
+#projects .title::after{
     content: "See My Work";
 }
-.projects .project .project-card{
+#projects .project .project-card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -378,45 +378,45 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
     color: #9d0552;
-    height: fit-content;
+    height : 550px;
     border: 0px solid green;
 }
-.projects .project .project-card:hover {
+#projects .project .project-card:hover {
     background: #9d0552;
     text-decoration: none;
     color: white;
 }
 
-.projects .project .project-card:hover .project-github-link a{
+#projects .project .project-card:hover .project-github-link a{
     text-decoration: none;
     color: #222;
 }
-.projects .project .project-card:hover .project-deployed-link a{
+#projects .project .project-card:hover .project-deployed-link a{
     text-decoration: none;
     color: #222;
 }
 
 
-.projects .project .project-card .box{
+#projects .project .project-card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.projects .project .project-card:hover .box{
+#projects .project .project-card:hover .box{
     transform: scale(1.05);
 }
-.projects .project .project-card .text{
+#projects .project .project-card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.projects .project .project-card img{
+#projects .project .project-card img{
     
     width: 100%;
 }
-.projects .project .project-card:hover img{
+#projects .project .project-card:hover img{
     border-color: #fff;
 }
 .content{
@@ -592,7 +592,7 @@ footer span a:hover{
         width:100%;
         margin:auto
     }
-    .about .about-content .left img{
+    #about .about-content .left img{
         height: 350px;
         width: 350px;
     }
@@ -636,35 +636,35 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+    #home .home-content .text-2{
         font-size: 70px;
     }
-    .home .home-content .text-3{
+    #home .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    #home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
     }
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
+    #about-content .column{
         width: 100%;
     }
-    .about .about-content .left{
+    #about .about-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    #about .about-content .right{
         flex: 100%;
     }
     .services .serv-content .project-card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    #skills .skills-content .column,
     .contact .contact-content .column .skills-card {
         width: 100%;
         margin-bottom: 35px;
@@ -690,20 +690,20 @@ footer span a:hover{
         width: 100%;
         
     }
-    .home .home-content .text-2{
+    #home .home-content .text-2{
         border: 0px solid red;
         font-size: 40px;
     }
-    .home .home-content .text-3{
+    #home .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    #home .home-content a{
         font-size: 20px;
     }
     #about{
         border: 1px solid red;
     }
-    .about .about-content{
+    #about .about-content{
         font-size: 20px;
     }
     .services .serv-content .project-card{
@@ -722,10 +722,10 @@ footer span a:hover{
         padding-bottom: 40px;
         transition:transform .5s ease-in-out; 
     }
-    /* /* .project-card{
+    #projects .project .project-card{
+        font-size: 10px;
         height: fit-content;
-    } */
-     */
+    }
     .project-card .content{
         font-size: medium;
     }
@@ -744,14 +744,14 @@ footer span a:hover{
     #home_img{
         display: none;
     }
-    .home .home-content .text-2{
+    #home .home-content .text-2{
         font-size: 50px;
     }
-    .home .home-content .text-3{
+    #home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    #about .about-content .right .text,
+    #skills .skills-content .left .text{
         font-size: 19px;
     }
     .carousel .project-card .content .project-description{
@@ -761,7 +761,7 @@ footer span a:hover{
         height: 600px;
         
     }
-    .projects .title::after{
+    #projects .title::after{
         display: none;
     }
     .contact-content .left .text{
