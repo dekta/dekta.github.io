@@ -25,14 +25,15 @@
     <nav id="nav-menu">
         <div class="max-width" >
             <div class="logo"><a href="#">Ekta<span>Dhawal</span></a></div>
-            <ul class="menu">
-                    <li><a class="nav-link home menu-btn" href="#home">Home</a></li>
-                    <li><a class="nav-link about menu-btn" href="#about">About</a></li>
-                    <li><a class="nav-link skills menu-btn" href="#skills">Skills</a></li>
-                    <li><a class="nav-link projects menu-btn" href="#projects">Projects</a></li>
-                    <li><a class="nav-link contact menu-btn" href="#contact">Contact</a></li>
-                    <button  id="resume-button-1" ><a class="nav-link resume" id="resume-link-1" href="./pdf/Ekta-Dhawal-Resume.pdf"  target="_blank" download = "">Resume</a></button></li>
-            </ul>
+                <ul class="menu">
+                    <li><a class="menu-btn" href="#home" >Home</a></li>
+                    <li><a class="menu-btn" href="#about" >About</a></li>
+                    <li><a class="menu-btn" href="#skills" >Skills</a></li>
+                    <li><a class="menu-btn" href="#projects" >Projects</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                    <li >
+                        <button  id="resume-button-1" ><a class="nav-link resume" id="resume-link-1" href="./pdf/Ekta-Dhawal-Resume.pdf"  target="_blank" download = "">Resume</a></button></li>
+                    </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div> 
@@ -40,7 +41,7 @@
     </nav>
 
     <!-- home section start -->
-    <section  id="home">
+    <section class="nav-link home" id="home">
         <div class="max-width home-1">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
@@ -56,7 +57,7 @@
     </section>
 
     <!-- about section start -->
-    <section  id="about" class="about section" >
+    <section  id="about"  class="nav-link about section">
         <div class="max-width">
             <h3 class="title">About me</h3>
             <div class="about-content">
@@ -78,7 +79,7 @@
     </section>
 
     <!-- skills section start -->
-    <section   id="skills"  >
+    <section   id="skills" class="nav-link skills" >
         <div class="max-width">
             <h3 class="title">My skills</h3>
             <div class="skills-content">
@@ -136,7 +137,7 @@
     </section>
 
     <!-- projects section start -->
-    <section id="projects" >
+    <section id="projects" class="nav-link projects">
         <div class="max-width">
             <h3 class="title">My projects</h3>
             <div  class="project" >
@@ -265,7 +266,7 @@
     </section>
 
     <!-- contact section start -->
-    <section  id="contact">
+    <section class="nav-link contact" id="contact">
         <div class="max-width">
             <h3 class="title">Contact me</h3>
             <div class="contact-content">
