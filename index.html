@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
@@ -35,7 +36,7 @@
                         <button  id="resume-button-1" ><a class="nav-link resume" id="resume-link-1" href="./pdf/Ekta-Dhawal-Resume.pdf"  target="_blank" download = "">Resume</a></button></li>
                     </ul>
             <div class="menu-btn">
-                <i >class="fas fa-bars"></i>
+                <i class="fas fa-bars" id="burder-icon-css"></i>
             </div> 
         </div> 
     </nav>
@@ -46,19 +47,17 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2" id="user-detail-name">EKTA DHAWAL</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                
+                <div class="text-3">And I'm a <span class="typing"></span></div>  
             </div>
-            <div id="home_img" data-aos="flip-left">
-                <img src="./images/home.png" alt="">
-            </div>
-            
+            <div id="home_img" data-aos="zoom-in">
+                <img src="./images/about.gif.gif" alt="">
+            </div>   
         </div>
     </section>
 
     <!-- about section start -->
     <section  id="about"  class="nav-link about section">
-        <div class="max-width">
+        <div class="about-div">
             <h3 class="title">About me</h3>
             <div class="about-content">
                 <div class="column left" >
@@ -71,7 +70,7 @@
                         Express, Node.js, HTML, and CSS. Learning and technology enthusiast.
                         Currently seeking opportunities to build reliable, optimised and scalable
                         systems.</p> 
-                        <button style="background-color: #111; border: none; padding: 5px; height: 10px; " id="resume-button-2"><a id="resume-link-2"  class="nav-link resume"  href="./pdf/Ekta-Dhawal-Resume.pdf" target="_blank" download="">Resume</a></button>       
+                        <button style=" background-color: black; border: none; padding: 5px; height: 10px; " id="resume-button-2"><a id="resume-link-2"  class="nav-link resume"  href="./pdf/Ekta-Dhawal-Resume.pdf" target="_blank" download="">Resume</a></button>       
                 </div>
             </div>
             
@@ -81,56 +80,74 @@
     <!-- skills section start -->
     <section   id="skills" class="nav-link skills" >
         <div class="max-width">
+            
             <h3 class="title">My skills</h3>
             <div class="skills-content">
                 <div id="skill_row_1">
                     <h2><hr> Frontend <hr></h2>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/html_img.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">HTML</h3>
-                    </div>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/css_img.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">CSS</h3>
-                    </div>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/javascript.svg" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">JavaScript</h3>
-                    </div>
+                    <div class="skill-block">
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/html_img.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">HTML</h3>
+                            
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/css_img.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">CSS</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/javascript.svg" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">JavaScript</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/react1.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">React</h3>
+                        </div>
+                    </div>   
                 </div>
                 <div id="skill_row_2">
                     <h2><hr> Backend <hr></h2>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/nodejs_img.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">NodeJS</h3>
+                    <div class="skill-block">
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/nodejs_img.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">NodeJS</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/express.pmg.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">ExpressJS</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/mongodb_img.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">MongoDB</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/mysql_img.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">My SQL</h3>
+                        </div>
                     </div>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/express.pmg.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">ExpressJS</h3>
-                    </div>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/mongodb_img.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">MongoDB</h3>
-                    </div>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/mysql_img.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">My SQL</h3>
-                    </div>
+                    
                 </div>
                 <div id="skill_row_3">
                     <h2><hr> Tools <hr></h2>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/git.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">Git</h3>
+                    <div class="skill-block">
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/git.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">Git</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/vscode.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">Vs Code</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/netlify.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">Netlify</h3>
+                        </div>
+                        <div class="skills-card"  data-aos="zoom-in">
+                            <img src="./images/aws.png" alt="" class="skills-card-img">
+                            <h3 class="skills-card-name">AWS</h3>
+                        </div>
                     </div>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/github_img.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">GitHub</h3>
-                    </div>
-                    <div class="skills-card"  data-aos="flip-left">
-                        <img src="./images/netlify.png" alt="" class="skills-card-img">
-                        <h3 class="skills-card-name">Netlify</h3>
-                    </div>
+                    
                 </div>
             </div>
             </div>
@@ -153,7 +170,7 @@
                     </div> 
                     <div class="repo-links">
                         <div class="project-github-link">
-                            <span>  <a href="https://github.com/dekta/Tutoring-Booking-System" target="_blank"> <i class="fab fa-github"></i> </a></span>
+                            <span>  <a href="https://github.com/dekta/Tutoring-Booking-System" target="_blank"> <i class="fab fa-github" ></i> </a></span>
                         </div>
                         <div class="project-deployed-link">
                             <span> <a href="https://schedularcom.netlify.app/" target="_blank">  <i class="fa fa-eye"></i>  </a></span>
@@ -270,67 +287,54 @@
 
     <!-- contact section start -->
     <section class="nav-link contact" id="contact">
-        <div class="max-width">
-            <h3 class="title">Contact me</h3>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="sub-title" style="color: #9d0552;">Mumbai,MH</div>
-                            </div>
-                            
-                        </div>
-                        <div class="row">
-                            <i class="fa fa-phone"></i>
-                            <div class="info">
-                                <div id="contact-phone" class="sub-title" style="color: #9d0552;" >+91 9460914056</div>
-                            </div>    
-                        </div>
-                        <div class="row">
-                            <a id="contact-email" href=" mailto:ektadhawal6306@gmail.com">   <i class="fas fa-envelope"></i> </a>
-                            <div class="info">
-                                <div class="sub-title" style="color: #9d0552;" >ektadhawal6306@gmail.com</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <a id="contact-linkedin" href="https://www.linkedin.com/in/ekta-dhawal/" target="_blank"><i class="fab fa-linkedin"></i></a> 
-                            <div class="info">
-                                <div class="sub-title" style="color: #9d0552;">Linkedin</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                           <a id="contact-github" href="https://github.com/dekta" target="_blank"> <i class="fab fa-github"></i></a>
-                            <div class="info">
-                                <div class="sub-title" style="color: #9d0552;">GitHub</div>
-                            </div>
-                        </div>
+        <h3 class="title">Contact me</h3>
+        <div class="contact-content">
+            <div class="column-left">
+                <div class="text">Get in Touch</div>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="sub-title" style="color: #744fc6;">Bangalore, Karnataka</span>    
+                    </div>
+                    <div class="row">
+                        <i class="fa fa-phone"></i>
+                        <span id="contact-phone" class="sub-title" style="color: #744fc6;" >+91 9460914056</span>   
+                    </div>
+                    <div class="row">
+                        <a id="contact-email" href=" mailto:ektadhawal6306@gmail.com">   <i class="fas fa-envelope"></i> </a>
+                        <span class="sub-title" style="color: #744fc6;" >ektadhawal6306@gmail.com</span>
+                    </div>
+                    <div class="row">
+                        <a id="contact-linkedin" href="https://www.linkedin.com/in/ekta-dhawal/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                        <span class="sub-title" style="color: #744fc6;">Linkedin</span>
+                    </div>
+                    <div class="row">
+                       <a id="contact-github" href="https://github.com/dekta" target="_blank"> <i class="fab fa-github"></i></a>
+                       <span class="sub-title" style="color: #744fc6;">GitHub</span>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
+            </div>
+            <div class="column-right">
+                <div class="text">Message me</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
                         </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
