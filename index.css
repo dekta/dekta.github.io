@@ -939,12 +939,9 @@ footer span a:hover {
  
 }
 
-@media (max-width: 281px){
-  body {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-  }
+
+
+@media (max-width: 280px) {
   .contact .title::after {
     display: none;
     background-color: black;
@@ -952,43 +949,72 @@ footer span a:hover {
   .title::after {
    display: none;
   }
-  .about-content div:nth-child(2){
-    width: 100%;
-    padding: none;
+  #home_img {
+    display: none;
   }
-  #user-detail-intro{
+  .home-content{
     width: 100%;
-    font-size: 10px;
-    padding: none;
-    margin: none;
-    overflow: hidden;
-   text-align:center
+  }
+  
+  #home .home-content .text-2 {
+    font-size: 50px;
+  }
+  #home .home-content .text-3 {
+    font-size: 27px;
+  }
+  #about .about-content .right .text,
+  #skills .skills-content .left .text {
+    font-size: 19px;
   }
   #about{
     width: 100%;
   }
-  #nav-menu{
+  .about-content{
     width: 100%;
+    flex-direction: column;
   }
-  #skills{
-    width: 100%;
-    padding: 10px;
-  }
-  .skill-block{
-    grid-template-columns: repeat(1,1fr);
-  }
-  #home{
+  .about-content div:nth-child(2){
     width: 100%;
     border: 0px solid red;
+    font-size: 13px;
   }
-  #projects{
+  .skill-block{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+  .carousel .project-card .content .project-description {
+    font-size: small;
+  }
+  .project-card {
+    height: 600px;
+  }
+  .sub-title{
+    font-size: 12px;
+  }
+  #projects .title::after {
+    display: none;
+  }
+  
+  
+  
+  .right form .error-box {
+    width: 150px;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+  .github-images img {
     width: 100%;
   }
-#services{
-  width: 100%;
-}
-#contact{
-  width: 100%;
-}
 
+  .project-title{
+    font-size: 10px;
+  }
+ 
 }
