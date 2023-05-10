@@ -539,7 +539,7 @@ flex-direction: column;
   padding: 30px;
 }
 .contact .title::after {
-  content: "get in touch";
+  content: "Get in touch";
   background-color: #222;
 }
 
@@ -764,6 +764,13 @@ footer span a:hover {
 }
 
 @media (max-width: 770px) {
+  .contact .title::after {
+    display: none;
+    background-color: black;
+  }
+  .title::after {
+   display: none;
+  }
   body {
     width: 100%;
     padding: 0px;
@@ -850,6 +857,13 @@ footer span a:hover {
 }
 
 @media (max-width: 601px){
+  .contact .title::after {
+    display: none;
+    background-color: black;
+  }
+  .title::after {
+   display: none;
+  }
     .about-content{
         flex-direction: column;
         width: 100%;
@@ -857,6 +871,13 @@ footer span a:hover {
 }
 
 @media (max-width: 477px) {
+  .contact .title::after {
+    display: none;
+    background-color: black;
+  }
+  .title::after {
+   display: none;
+  }
   #home_img {
     display: none;
   }
@@ -916,4 +937,58 @@ footer span a:hover {
     width: 100%;
   }
  
+}
+
+@media (max-width: 477px){
+  body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .contact .title::after {
+    display: none;
+    background-color: black;
+  }
+  .title::after {
+   display: none;
+  }
+  .about-content div:nth-child(2){
+    width: 100%;
+    padding: none;
+  }
+  #user-detail-intro{
+    width: 100%;
+    font-size: 10px;
+    padding: none;
+    margin: none;
+    overflow: hidden;
+   text-align:center
+  }
+  #about{
+    width: 100%;
+  }
+  #nav-menu{
+    width: 100%;
+  }
+  #skills{
+    width: 100%;
+    padding: 10px;
+  }
+  .skill-block{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #home{
+    width: 100%;
+    border: 0px solid red;
+  }
+  #projects{
+    width: 100%;
+  }
+#services{
+  width: 100%;
+}
+#contact{
+  width: 100%;
+}
+
 }
