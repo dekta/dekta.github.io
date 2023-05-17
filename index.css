@@ -424,7 +424,7 @@ flex-direction: column;
   gap: 40px;
   margin: auto;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   transition: transform .5s ease-in-out;
 }
 
@@ -445,7 +445,7 @@ flex-direction: column;
   overflow: hidden;
   transition: all 0.3s ease;
   color: #744fc6;
-  height: 550px;
+  height: 600px;
   border: 0px solid green;
 }
 #projects .project .project-card:hover {
