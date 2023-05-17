@@ -31,10 +31,9 @@ section {
   padding: 100px 0;
 }
 .max-width {
-  /* max-width: 1300px; */
-  /* padding: 0 80px; */
   margin: auto;
 }
+
 #about,
 .services,
 #skills,
@@ -92,10 +91,12 @@ section .title::after {
   transition: all 0.3s ease;
   padding: 30px;
 }
+
 #nav-menu.sticky {
  padding: 30px;
   background: #744fc6;
 }
+
 #nav-menu .max-width {
   display: flex;
   align-items: center;
@@ -393,6 +394,7 @@ flex-direction: column;
   flex-direction: column;
     margin: auto;
     width: 150px;
+    height: 100px;
    
 }
 
@@ -941,7 +943,7 @@ footer span a:hover {
 
 
 
-@media (max-width: 280px) {
+@media (max-width: 281px) {
   .contact .title::after {
     display: none;
     background-color: black;
@@ -975,7 +977,6 @@ footer span a:hover {
   }
   .about-content div:nth-child(2){
     width: 100%;
-    border: 0px solid red;
     font-size: 13px;
   }
   .skill-block{
@@ -995,7 +996,10 @@ footer span a:hover {
   #projects .title::after {
     display: none;
   }
-  
+  .project-title{
+    font-size: 7px;
+    border: 0px solid red;
+  }
   
   
   .right form .error-box {
@@ -1017,4 +1021,19 @@ footer span a:hover {
     font-size: 10px;
   }
  
+  #user-detail-intro{
+    width: 100%;
+    border: 0px solid red;
+    padding: none;
+  }
+
+  .right{
+    width: 100%;
+    border: 0px solid red;
+  }
+  .project-tech-stack{
+    width: 100%;
+    border: 0px solid red;
+  }
+
 }
