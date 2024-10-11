@@ -81,12 +81,12 @@ let resume2 = document
   .addEventListener('click', opendrive2)
 
 function opendrive1 () {
-  window.open((href = 'dekta.github.io/pdf'))
+  window.open((href = 'https://drive.google.com/file/d/1fotTWotDtqgO-xf4Y8LAR9Kuk6hcIEbV/view'))
 }
 
 function opendrive2 () {
   window.open(
     (href =
-      'https://drive.google.com/file/d/1xN90OjvzT8xab5C8JI48741g4kkez7BY/view?usp=sharing')
+      'https://drive.google.com/file/d/1fotTWotDtqgO-xf4Y8LAR9Kuk6hcIEbV/view')
   )
 }
