@@ -81,12 +81,12 @@ let resume2 = document
   .addEventListener('click', opendrive2)
 
 function opendrive1 () {
-  window.open((href = 'https://drive.google.com/file/d/1fotTWotDtqgO-xf4Y8LAR9Kuk6hcIEbV/view'))
+  window.open((href = 'https://drive.google.com/file/d/1fotTWotDtqgO-xf4Y8LAR9Kuk6hcIEbV/view?usp=sharing'))
 }
 
 function opendrive2 () {
   window.open(
     (href =
-      'https://drive.google.com/file/d/1fotTWotDtqgO-xf4Y8LAR9Kuk6hcIEbV/view')
+      'https://drive.google.com/file/d/1fotTWotDtqgO-xf4Y8LAR9Kuk6hcIEbV/view?usp=sharing')
   )
 }
